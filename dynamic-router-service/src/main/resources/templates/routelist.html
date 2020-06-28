@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由列表</title>
+    <style type="text/css">
+        table.gridtable {
+            margin-top: 5px;
+            width: 800px;
+            font-family: verdana,arial,sans-serif;
+            font-size:13px;
+            color:#333333;
+            border-width: 1px;
+            border-color: #666666;
+            border-collapse: collapse;
+        }
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+        table.gridtable td {
+            text-align: center;
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+<h1>路由信息</h1>
+<a href="/gateway-routes/add">新增路由</a> &nbsp;<a href="/version/add">发布路由</a>
+<br/>
+
+<!-- Table goes in the document BODY -->
+<table class="gridtable">
+    <tr>
+        <th width="100px">id</th>
+        <th width="200px">routeId</th>
+        <th width="230px">routeUri</th>
+        <th width="120px">routeOrder</th>
+        <th width="150px">操作</th>
+    </tr>
+
+    <tr th:each="route : ${list}">
+        <td th:text="${route.id}">id</td>
+        <td th:text="${route.routeId}">id</td>
+        <td th:text="${route.routeUri}">id</td>
+        <td th:text="${route.routeOrder}">id</td>
+<!--        <td><a th:href="@{/gateway-routes/edit(id=${route.id})}">编辑</a> &nbsp; <a th:href="@{/url/edit(id=${route.id})}">权限编辑</a> &nbsp;<a th:href="@{/gateway-routes/delete(id=${route.id})}">删除</a></td>-->
+        <td><a th:href="@{/gateway-routes/edit(id=${route.id})}">编辑</a> &nbsp; <a th:href="@{/url/getAllRole(routeId=${route.routeId})}">权限编辑</a> &nbsp;<a th:href="@{/gateway-routes/delete(id=${route.id})}">删除</a></td>
+    </tr>
+</table>
+</body>
+</html>

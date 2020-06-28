@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d8dfb6e-2048-4377-a8c7-35714bd4540f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Code\Java\j2ee\RepMaven" />
+        <option name="mavenHome" value="D:/Code/Java/j2ee/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Code\Java\j2ee\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dAIzEJG6mezdctLMOXndpO6MIc" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Haita\Desktop\gateway\dynamic-router-service\src\main\resources\templates" />
+      <recent name="C:\Users\Haita\Desktop\gateway\dynamic-router-service\src\main\resources" />
+      <recent name="C:\Users\Haita\Desktop\gateway\dynamic-router-service\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SecurityServiceApplication">
+    <configuration name="DynamicRouterServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-router-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simit.DynamicRouterServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicRouterServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dynamic-router-service (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simit.DynamicRouterServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicRouterServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="dynamic-router-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simit.DynamicRouterServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simit.EurekaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simit.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="security-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simit.SecurityServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
+      <item itemvalue="Spring Boot.DynamicRouterServiceApplication" />
+      <item itemvalue="Spring Boot.SecurityServiceApplication" />
+      <item itemvalue="Spring Boot.DynamicRouterServiceApplication (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.DynamicRouterServiceApplication (1)" />
+        <item itemvalue="Spring Boot.DynamicRouterServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.14502165" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d8dfb6e-2048-4377-a8c7-35714bd4540f" name="Default Changelist" comment="" />
+      <created>1591861730491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591861730491</updated>
+      <workItem from="1591861733951" duration="15394000" />
+      <workItem from="1591966476552" duration="2184000" />
+      <workItem from="1591969041988" duration="399000" />
+      <workItem from="1591969449162" duration="38000" />
+      <workItem from="1591969508650" duration="14906000" />
+      <workItem from="1592106280944" duration="10916000" />
+      <workItem from="1592896060014" duration="11983000" />
+      <workItem from="1592977269237" duration="9878000" />
+      <workItem from="1593306909119" duration="17372000" />
+      <workItem from="1593334011402" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591948920650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591948920650" />
+    <state x="685" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1593326961696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="485" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1360.738@0.0.1360.738" timestamp="1591981203767" />
+    <state x="685" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593326961696" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592896265993">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="524" y="195" key="FileChooserDialogImpl/0.0.1360.738@0.0.1360.738" timestamp="1592115044626" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592896265993" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593334055358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.0.bottom/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593334055358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.0.center/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593334055358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.0.left/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593334055358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.0.right/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
+    <state width="1312" height="282" key="GridCell.Tab.1.bottom" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.1.bottom/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
+    <state width="1312" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.1.center" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.1.center/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
+    <state width="1312" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.1.left" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.1.left/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
+    <state width="1312" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.1.right" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.1.right/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
+    <state width="1312" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.2.bottom" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.2.bottom/0.0.1360.738@0.0.1360.738" timestamp="1592310645117" />
+    <state width="1312" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.2.center" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.2.center/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
+    <state width="1312" height="282" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.2.left" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.2.left/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
+    <state width="1312" height="282" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1312" height="282" key="GridCell.Tab.2.right" timestamp="1593333752429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="288" key="GridCell.Tab.2.right/0.0.1360.738@0.0.1360.738" timestamp="1592310645117" />
+    <state width="1312" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state x="256" y="16" key="SettingsEditor" timestamp="1592897279881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="181" y="11" key="SettingsEditor/0.0.1360.738@0.0.1360.738" timestamp="1591969638693" />
+    <state x="256" y="16" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592897279881" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1593322722274">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1593322722274" />
+    <state x="759" y="298" key="chooseDestDirectoryDialog" timestamp="1592896547480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592896547480" />
+    <state x="334" y="215" key="new project wizard" timestamp="1592896398771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592896398771" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/controller/RoutesController.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

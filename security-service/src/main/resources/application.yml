@@ -1,0 +1,33 @@
+server:
+  port: 8082
+
+spring:
+  redis:
+    host: 39.107.230.39
+    port: 16379
+    password: xx$200200
+    database: 0
+  application:
+    name: security-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ac_db?serverTimezone=UTC&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+    username: root
+    password: simit200
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      ddl-auto: update
+    show-sql: true
+
+
+
+#阿里短信服务
+  ali:
+    sms:
+      product: Dysmsapi
+      domain: dysmsapi.aliyuncs.com
+      accessKeyId: LTAI4FtExhMtugZZN728iWX9
+      accessKeySecret: lMQI8Qv7YCBuEkVzIO5OkLgllEsrhT

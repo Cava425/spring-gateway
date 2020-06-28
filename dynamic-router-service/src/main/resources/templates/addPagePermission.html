@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加路由信息</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        //先用cdn，如未加载到jquery再加载项目下的
+        if (typeof jQuery == "undefined") {
+            var js = "/js/jquery.min.js";
+            document.write('<script type="text/javascript" src="' + js + '"><\/script>');
+        }
+    </script>
+</head>
+<body>
+
+<h1>添加路由权限信息</h1>
+<div>
+    <div>
+        当前系统存在角色
+    </div>
+    <br/>
+
+    <table >
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>权限</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr th:each="p: ${sysrole}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td>
+                <div>
+                    <a th:href="@{/url/edit(routeId=${routeId},role=${p.name})}">权限编辑</a>
+                </div>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+<!--    <table th:if="${pagePermissions} ne null">-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>id</th>-->
+<!--            <th>创建时间</th>-->
+<!--            <th>路由的Id</th>-->
+<!--            <th>角色</th>-->
+<!--            <th>权限</th>-->
+
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+
+<!--        <tr th:each="pagePermission: ${pagePermissions}">-->
+<!--            <td th:text="${pagePermission.id}"></td>-->
+
+<!--            <td th:text="${pagePermission.createTime}"></td>-->
+
+<!--            <td th:text="${pagePermission.role}"></td>-->
+
+<!--            <td>-->
+<!--                <div>-->
+<!--                    routeId：<textarea id="filters" rows="4" cols="50"-->
+<!--                                      th:text="${pagePermission.permissionValue}"></textarea>-->
+<!--                </div>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <div>-->
+<!--                    <input type="button" onclick="save()" value="添加" />-->
+<!--                </div>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+</div>
+<script type="text/javascript" th:inline="javascript">
+
+    var id = 0;
+    var route = [[${route}]];
+    console.log(route);
+    $(function () {
+        init();
+    })
+
+    function init() {
+        if (route && route.id) {
+            console.log("init");
+            id = route.id;
+        }
+    }
+
+    function save() {
+        var routeId = getById("routeId").value;
+        var routeUri = getById("routeUri").value;
+        var routeOrder = getById("routeOrder").value;
+        var predicates = getById("predicates").value;
+        var filters = getById("filters").value;
+        var route = {
+            routeId: routeId,
+            routeUri: routeUri,
+            routeOrder: routeOrder,
+            predicates: predicates,
+            filters: filters
+        };
+        var url = "/gateway-routes/add";
+        if (id > 0) {
+            route.id = id;
+            url = "/gateway-routes/edit";
+        }
+        $.ajax({
+            type: "post",
+            url: url,
+            data: JSON.stringify(route),
+            contentType: "application/json",
+            success: function (result) {
+                if (result && result == "success") {
+                    alert("保存成功");
+                    window.location.href = '/gateway-routes/list';
+                }
+            }
+        })
+    }
+
+    function getById(id) {
+        return document.getElementById(id);
+    }
+
+</script>
+</body>
+</html>

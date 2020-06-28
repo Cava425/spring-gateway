@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加路由信息</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        //先用cdn，如未加载到jquery再加载项目下的
+        if (typeof jQuery == "undefined") {
+            var js = "/js/jquery.min.js";
+            document.write('<script type="text/javascript" src="' + js + '"><\/script>');
+        }
+    </script>
+</head>
+<body>
+
+<h1>添加路由权限信息</h1>
+<div>
+    <div>
+        该角色权限
+    </div>
+    <br/>
+
+
+    <div>
+
+        <div>
+            路由id：<input type="text" id="routeId" th:value="${routeId}"/>
+        </div><br/>
+        <div>
+            角色：<textarea id="role" rows="4" cols="50" th:text="${role}"></textarea>
+        </div><br/>
+        <div>
+            路由权限：
+            <textarea id="permissionValue" rows="4" cols="50" th:text="${pagePermission.permissionValue}"></textarea>
+        </div>
+        <br/>
+        <div>
+            <input type="button" onclick="window.history.back()" value="返回"/>
+            <input type="button" onclick="save()" value="提交"/>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" th:inline="javascript">
+
+        var id = 0;
+        var pagePermission = [[${pagePermission}]];
+        console.log(pagePermission);
+        $(function () {
+            init();
+        })
+
+        function init() {
+            if (pagePermission && pagePermission.id) {
+                console.log("init");
+                id = pagePermission.id;
+            }
+        }
+
+        function save() {
+
+            var routeId = getById("routeId").value;
+            var role = getById("role").value;
+            var permissionValue = getById("permissionValue").value;
+            var route = {
+                id: id,
+                routeId: routeId,
+                role: role,
+                permissionValue: permissionValue
+            };
+            var url = "/url/add";
+            if (id > 0) {
+                route.id = id;
+                url = "/url/edit";
+            }
+            $.ajax({
+                type: "post",
+                url: url,
+                data: JSON.stringify(route),
+                contentType: "application/json",
+                success: function (result) {
+                    if (result && result == "success") {
+                        alert("保存成功");
+                        // window.location.href = '/gateway-routes/list';
+                        window.history.back();
+                    }
+                }
+            })
+        }
+
+        function getById(id) {
+            return document.getElementById(id);
+        }
+
+    </script>
+</body>
+</html>
