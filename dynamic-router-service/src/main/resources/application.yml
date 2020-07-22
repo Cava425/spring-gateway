@@ -9,12 +9,6 @@ spring:
 #    inetutils:
 #      timeout-seconds: 10
 
-  thymeleaf:
-  cache: false
-  mode: HTML
-
-
-
   # 数据源
   redis:
     host: 39.107.230.39
@@ -35,7 +29,3 @@ spring:
 #      pool-name: PbHikariCP
 #      connection-test-query: SELECT 1
 #      connection-timeout: 30000
-
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.simit.entity

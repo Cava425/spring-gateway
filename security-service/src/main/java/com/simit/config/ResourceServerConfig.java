@@ -1,21 +1,16 @@
 package com.simit.config;
 
+import com.simit.security.sms.authentication.SmsCodeAuthenticationSecurityConfig;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.token.TokenStore;
-import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
-import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
-import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 
 @Configuration
 @EnableResourceServer
@@ -30,6 +25,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Autowired
     PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
 
 
 
@@ -49,8 +47,10 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/user/**").permitAll()
+        http.apply(smsCodeAuthenticationSecurityConfig)
+                .and()
+                .authorizeRequests()
+                .antMatchers("/oauth/**", "/sms/**", "/user/**", "/h2-console/**").permitAll()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()                  //放行options方法请求
                 .anyRequest()
                 .authenticated()                 // 所有请求都需要通过认证
@@ -58,6 +58,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .httpBasic()                     // Basic提交
                 .and()
                 .csrf().disable();               // 关跨域保护
+        http.headers().frameOptions().disable();
     }
 
     //    /**

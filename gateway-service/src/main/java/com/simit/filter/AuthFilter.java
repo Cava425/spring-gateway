@@ -15,7 +15,9 @@ import reactor.core.publisher.Mono;
 
 import java.nio.charset.StandardCharsets;
 
-@Component
+/**
+ * 全局过滤器，对每一个请求都会过滤，检查是否符合规则，此项目暂时没有用到
+ */
 public class AuthFilter implements GlobalFilter, Ordered {
 
     @Override
@@ -26,6 +28,9 @@ public class AuthFilter implements GlobalFilter, Ordered {
         // 跳过不需要验证的路径
         String url = exchange.getRequest().getURI().getPath();
         if(url.startsWith("/oauth/token")){
+            return chain.filter(exchange);
+        }
+        if(url.startsWith("/user")){
             return chain.filter(exchange);
         }
 

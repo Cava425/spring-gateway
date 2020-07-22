@@ -4,10 +4,14 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: aouth2
-          uri: http://localhost:8082
-          predicates:
-            - Path=/oauth/**
+#        - id: aouth2
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/oauth/**
+#        - id: user
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/user/**
         - id: security
           uri: http://localhost:8082
           predicates:

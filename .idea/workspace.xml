@@ -1,11 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d8dfb6e-2048-4377-a8c7-35714bd4540f" name="Default Changelist" comment="" />
+    <list default="true" id="3d8dfb6e-2048-4377-a8c7-35714bd4540f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/spring-gateway.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/data/JdbcRoutesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/data/JdbcVersionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/data/RoutesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/data/VersionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/filter/JwtCheckGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/jdbc/JdbcUserRolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/jdbc/UserRolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/jpa/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/RolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/SecurityUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/handler/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/handler/CustomAuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/authentication/SmsCodeAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/authentication/SmsCodeAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/authentication/SmsCodeAuthenticationSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/authentication/SmsCodeAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/authentication/SmsUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/controller/SmsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/wechat/controller/CallbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/utils/ResultUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/resources/schema-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-service/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/DynamicRouterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/DynamicRouterServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/controller/RoutesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/controller/RoutesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/controller/VersionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/controller/VersionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/GatewayFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/GatewayPredicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/GatewayRoute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/Routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/entity/Version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/mapper/RoutesMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/mapper/VersionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/service/RouteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/service/RouteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/service/VersionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/service/VersionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/mapper/RoutesMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/mapper/VersionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/addPagePermission.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/addPagePermission01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/addRoute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/addVersion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/delSuccess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/routelist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-router-service/src/main/resources/templates/versionlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/router/entity/GatewayFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/router/entity/GatewayPredicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/router/entity/GatewayRoute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/router/schedule/DynamicRouteScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/simit/router/schedule/DynamicRouteScheduling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/SecurityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/SecurityServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/AuthorizationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/AuthorizationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/jpa/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/UserRepositoryUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/UserRepositoryUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/simit/service/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/com/simit/security/sms/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/test/java/com/simit/SecurityServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/test/java/com/simit/SecurityServiceApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -14,6 +111,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -25,6 +125,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1dAIzEJG6mezdctLMOXndpO6MIc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,9 +138,10 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/security-service/src/main/java/com/simit/data/jpa" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,6 +155,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xuyp\Desktop\Demo\spring-gateway\security-service\src\main\java\com\simit\data\jpa" />
+      <recent name="C:\Users\xuyp\Desktop\Demo\spring-gateway\security-service\src\main\resources" />
       <recent name="C:\Users\Haita\Desktop\gateway\dynamic-router-service\src\main\resources\templates" />
       <recent name="C:\Users\Haita\Desktop\gateway\dynamic-router-service\src\main\resources" />
       <recent name="C:\Users\Haita\Desktop\gateway\dynamic-router-service\src\main\resources\mapper" />
@@ -64,6 +170,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SecurityServiceApplication">
+    <configuration name="SecurityServiceApplicationTests.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="security-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simit" />
+      <option name="MAIN_CLASS_NAME" value="com.simit.SecurityServiceApplicationTests" />
+      <option name="METHOD_NAME" value="getAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicRouterServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dynamic-router-service" />
       <extension name="coverage">
@@ -125,9 +247,11 @@
       <item itemvalue="Spring Boot.DynamicRouterServiceApplication" />
       <item itemvalue="Spring Boot.SecurityServiceApplication" />
       <item itemvalue="Spring Boot.DynamicRouterServiceApplication (1)" />
+      <item itemvalue="JUnit.SecurityServiceApplicationTests.getAllUsers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SecurityServiceApplicationTests.getAllUsers" />
         <item itemvalue="Spring Boot.DynamicRouterServiceApplication (1)" />
         <item itemvalue="Spring Boot.DynamicRouterServiceApplication" />
       </list>
@@ -137,12 +261,26 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.14502165" />
+          <option name="contentProportion" value="0.19805194" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -171,6 +309,10 @@
       <workItem from="1592977269237" duration="9878000" />
       <workItem from="1593306909119" duration="17372000" />
       <workItem from="1593334011402" duration="44000" />
+      <workItem from="1593481133446" duration="4669000" />
+      <workItem from="1593485834963" duration="14660000" />
+      <workItem from="1594609574340" duration="814000" />
+      <workItem from="1594778607952" duration="115516000" />
     </task>
     <servers />
   </component>
@@ -178,89 +320,105 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591948920650">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593490490738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591948920650" />
-    <state x="685" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1593326961696">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593490490738" />
+    <state x="685" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1595240474368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="485" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1360.738@0.0.1360.738" timestamp="1591981203767" />
-    <state x="685" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593326961696" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592896265993">
+    <state x="685" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595240474368" />
+    <state x="524" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595059960049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="524" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595059960049" />
+    <state x="703" y="379" width="514" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594862255617">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="379" width="514" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1594862255617" />
+    <state x="349" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595309067744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="349" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595309067744" />
+    <state width="467" height="466" key="DebuggerActiveHint" timestamp="1594972440048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="467" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1594972440048" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1594955187545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="524" y="195" key="FileChooserDialogImpl/0.0.1360.738@0.0.1360.738" timestamp="1592115044626" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592896265993" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593334055358">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594955187545" />
+    <state width="1481" height="367" key="GridCell.Tab.0.bottom" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.0.bottom/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593334055358">
+    <state width="1481" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.0.center" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.0.center/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593334055358">
+    <state width="1481" height="367" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.0.left" timestamp="1595385429127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.0.left/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593334055358">
+    <state width="1481" height="367" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429127" />
+    <state width="1481" height="367" key="GridCell.Tab.0.right" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.0.right/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593334055358" />
-    <state width="1312" height="282" key="GridCell.Tab.1.bottom" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.1.bottom" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.1.bottom/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
-    <state width="1312" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.1.center" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.1.center" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.1.center/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
-    <state width="1312" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.1.left" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.1.left" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.1.left/0.0.1360.738@0.0.1360.738" timestamp="1592310645115" />
-    <state width="1312" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.1.right" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.1.right" timestamp="1595385429128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.1.right/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
-    <state width="1312" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.2.bottom" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595385429128" />
+    <state width="1481" height="367" key="GridCell.Tab.2.bottom" timestamp="1595327837783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.2.bottom/0.0.1360.738@0.0.1360.738" timestamp="1592310645117" />
-    <state width="1312" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.2.center" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595327837783" />
+    <state width="1481" height="367" key="GridCell.Tab.2.center" timestamp="1595327837783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.2.center/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
-    <state width="1312" height="282" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.2.left" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595327837783" />
+    <state width="1481" height="367" key="GridCell.Tab.2.left" timestamp="1595327837783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.2.left/0.0.1360.738@0.0.1360.738" timestamp="1592310645116" />
-    <state width="1312" height="282" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
-    <state width="1312" height="282" key="GridCell.Tab.2.right" timestamp="1593333752429">
+    <state width="1481" height="367" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595327837783" />
+    <state width="1481" height="367" key="GridCell.Tab.2.right" timestamp="1595327837783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="288" key="GridCell.Tab.2.right/0.0.1360.738@0.0.1360.738" timestamp="1592310645117" />
-    <state width="1312" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593333752429" />
+    <state width="1481" height="367" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595327837783" />
     <state x="256" y="16" key="SettingsEditor" timestamp="1592897279881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="181" y="11" key="SettingsEditor/0.0.1360.738@0.0.1360.738" timestamp="1591969638693" />
     <state x="256" y="16" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592897279881" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1593322722274">
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1595327753117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1593322722274" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1595327753117" />
     <state x="759" y="298" key="chooseDestDirectoryDialog" timestamp="1592896547480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -275,8 +433,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/dynamic-router-service/src/main/java/com/simit/controller/RoutesController.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="7" />
+          <line>46</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-service/src/main/java/com/simit/security/handler/CustomAuthenticationFailureHandler.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

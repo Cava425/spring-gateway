@@ -1,24 +1,35 @@
 package com.simit.entity;
 
-import lombok.AccessLevel;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
 @Data
 @Entity
-public class User implements UserDetails {
+@Table(name = "t_user")
+@TableName("t_user")
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     @Id
+    @TableId(value = "id", type = IdType.AUTO)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String username;
 
     private String password;
 
@@ -42,37 +53,12 @@ public class User implements UserDetails {
 
     private String headImgUrl;
 
-    @ManyToMany(targetEntity = Role.class, cascade = CascadeType.ALL)
+    @Transient
+    @TableField(exist = false)
     private List<Role> roles;
 
+    @Transient
+    @TableField(exist = false)
+    private List<Permission> permissions;
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
-    }
-
-    @Override
-    public String getUsername() {
-        return name;
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
 }

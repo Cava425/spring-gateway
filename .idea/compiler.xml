@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gateway-service" />
-        <module name="security-service" />
         <module name="gateway" />
-        <module name="eureka-service" />
+        <module name="gateway-service" />
         <module name="dynamic-router-service" />
+        <module name="eureka-service" />
+        <module name="security-service" />
+        <module name="spring-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
